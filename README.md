@@ -183,4 +183,14 @@ File f1= new File(".."+File.separator+"选课.txt");
 
 流程图
 ---
-![image]
+![image](https://github.com/yuzhuofan21/file/blob/master/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+
+运行结果
+---
+![image](https://github.com/yuzhuofan21/file/blob/master/%E9%80%89%E8%AF%BE%E8%BE%93%E5%85%A5%E6%96%87%E4%BB%B6.png)
+![image](https://github.com/yuzhuofan21/file/blob/master/%E9%80%89%E8%AF%BE%E6%96%87%E4%BB%B6.png)
+
+实验感想
+---
+
+   这次综合实验把之前所学的选课以及GUI，还有这次所学的file文件输入输出流的方法综合运用，实现了一个可以将获得的选课信息写入文件，并且退课。这次实验主要是在原GUI基础上实现文件输入输出的方法，通过结合老师上课所讲和课下复习，勉强做出了这次程序，不足之处依旧很多，还需要在以后的学习中多多巩固。
