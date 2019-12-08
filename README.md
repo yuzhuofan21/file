@@ -189,6 +189,8 @@ File f1= new File(".."+File.separator+"选课.txt");
 ---
 ![image](https://github.com/yuzhuofan21/file/blob/master/%E9%80%89%E8%AF%BE%E8%BE%93%E5%85%A5%E6%96%87%E4%BB%B6.png)
 ![image](https://github.com/yuzhuofan21/file/blob/master/%E9%80%89%E8%AF%BE%E6%96%87%E4%BB%B6.png)
+![image](https://github.com/yuzhuofan21/file/blob/master/%E7%BB%93%E6%9E%9C.png)
+![image](https://github.com/yuzhuofan21/file/blob/master/%E7%BB%93%E6%9E%9C1.png)
 
 实验感想
 ---
