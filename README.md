@@ -48,7 +48,7 @@ class Teacher extends Person{}
 核心代码
 ---
 
-```
+```java
 public Student(int id,String name,String  gender,Course scourse,Teacher teacher){
 			super(id,name,gender);
 			this.scourse = scourse;
@@ -77,8 +77,8 @@ public Student(int id,String name,String  gender,Course scourse,Teacher teacher)
 return id+","+name+","+gender+","+scourse+","+teacher.getName();
 		}
  ```
- 界面布局代码
- ```
+ 界面布局代码,选课退课按钮
+ ```java
   public GridBagLayoutDemo() {
     	f = new MyFrame();
         j2 = new JButton("选课");
@@ -99,7 +99,7 @@ return id+","+name+","+gender+","+scourse+","+teacher.getName();
         f.setLayout(layout);
  ```
  gui组件调用侦听器里的抽象方法actionPerformed
- ```
+ ```java
  public void actionPerformed(ActionEvent e) {
 		String name = j6.getText();
 调用下拉列表框内容
@@ -113,7 +113,7 @@ String scourse =(String)j5.getSelectedItem();
       j9.setText(" "+student);	
 ```
 输入输出选课
-```
+```java
 	public void actionPerformed(ActionEvent a) {
 		String name = j6.getText();
 		String scourse =(String)j5.getSelectedItem();
@@ -122,7 +122,8 @@ String scourse =(String)j5.getSelectedItem();
 		teacher=new Teacher(1, "张世博", "男",course);
 		student=new Student(1,name, "男",course,teacher);	   
         j9.setText(" "+student);
-    	    try {
+###选课后的信息输入到文件中    	   
+	   try {
       	    	input=new FileWriter(f1,true);
       	    	input.write("  "+student.getName()+"  "+student.getCourse()+"  "+student.getTeather()+"\n");
       	    	input.flush();
@@ -136,7 +137,7 @@ String scourse =(String)j5.getSelectedItem();
 
 
 声明输入文本的类
-```
+```java
 File f1= new File(".."+File.separator+"选课.txt"); 
 	FileWriter input;
 	BufferedReader br;
@@ -150,11 +151,12 @@ File f1= new File(".."+File.separator+"选课.txt");
 
 
 输入输出退课
-```
+```java
  j3.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+###将文件中的每一行数据放入缓存，与退课信息对比，相同则不输入文件，不同则输入文件				
 				try {
 					String nameset=j6.getText();
 				    String courseset=j5.getToolTipText();
